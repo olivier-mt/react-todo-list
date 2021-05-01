@@ -1,1 +1,5 @@
 /* Other rules */
+
+.crossed {
+  text-decoration: line-through;
+}
