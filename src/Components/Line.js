@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const Line = ({ textArray, i, doneArray, setDoneArray, setTextArray }) => {
   console.log("done array", doneArray);
 
@@ -45,8 +47,14 @@ const Line = ({ textArray, i, doneArray, setDoneArray, setTextArray }) => {
           id={i}
           onClick={onClickCheckBox}
         />
-        <span className={doneArray[i] && "crossed"}>{textArray[i]}</span>
-        <button onClick={onClickDelete}>delete</button>
+        <span className={`${doneArray[i] && "crossed"} ${"line_text"}`}>
+          {textArray[i]}
+        </span>
+        <FontAwesomeIcon
+          icon="trash"
+          className="trash-icon"
+          onClick={onClickDelete}
+        />
       </div>
     );
   }

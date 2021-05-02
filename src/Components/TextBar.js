@@ -23,8 +23,15 @@ const TextBar = ({
   };
   return (
     <>
-      <input type="text" placeholder="new task" onChange={handleChange} />
-      <button onClick={handleClick}>Add Task</button>
+      <input
+        className="newTaskBar"
+        type="text"
+        placeholder="new task"
+        onChange={handleChange}
+      />
+      <button onClick={handleClick} className="add-task">
+        Add Task
+      </button>
     </>
   );
 };

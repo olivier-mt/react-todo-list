@@ -1,5 +1,45 @@
 /* Other rules */
 
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.newTaskBar {
+  width: 548px;
+  height: 65px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: #8576df;
+  background-color: #f2f7fd;
+  font-size: 29px;
+  padding-top: 22px;
+  padding-bottom: 14px;
+  padding-left: 25px;
+  margin-right: 57px;
+}
+
+.add-task {
+  width: 130px;
+  height: 65px;
+  background-color: #5c48d3;
+  border: 1px solid #5c48d3;
+  border-radius: 10px;
+  color: white;
+  font-size: 22px;
+}
+
+.line_text {
+  font-size: 28px;
+  margin: 0px 20px;
+}
+
+.trash-icon {
+  width: 24.5px;
+  height: 28px;
+  color: #5c48d3;
+}
+
 .crossed {
   text-decoration: line-through;
 }

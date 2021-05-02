@@ -3,6 +3,10 @@ import TextBar from "./Components/TextBar";
 import Line from "./Components/Line";
 import { useState } from "react";
 
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
+library.add(faTrash);
+
 function App() {
   const [textArray, setTextArray] = useState([]);
   const [text, setText] = useState("");
